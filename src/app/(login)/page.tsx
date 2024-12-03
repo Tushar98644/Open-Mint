@@ -7,7 +7,7 @@ import { client } from "../client";
 
 export default function Home() {
   return (
-    <main className="p-4 pb-10 min-h-[100vh] flex items-center justify-center container max-w-screen-lg mx-auto">
+    <main className="bg-zinc-950 text-neutral-200 p-4 pb-10 min-h-[100vh] flex items-center justify-center container min-w-[100vw]">
       <div className="py-20">
         <Header />
 
@@ -21,7 +21,7 @@ export default function Home() {
           />
         </div>
 
-        <ThirdwebResources />
+        {/* <ThirdwebResources /> */}
       </div>
     </main>
   );
@@ -40,9 +40,9 @@ function Header() {
       />
 
       <h1 className="text-2xl md:text-6xl font-semibold md:font-bold tracking-tighter mb-6 text-zinc-100">
-        thirdweb SDK
-        <span className="text-zinc-300 inline-block mx-1"> + </span>
-        <span className="inline-block -skew-x-6 text-blue-500"> Next.js </span>
+        Login
+        <span className="text-zinc-300 inline-block mx-4"> with </span>
+        <span className="inline-block -skew-x-6 text-blue-500"> OpenMint </span>
       </h1>
 
       <p className="text-zinc-300 text-base">
@@ -56,29 +56,29 @@ function Header() {
   );
 }
 
-function ThirdwebResources() {
-  return (
-    <div className="grid gap-4 lg:grid-cols-3 justify-center">
-      <ArticleCard
-        title="thirdweb SDK Docs"
-        href="https://portal.thirdweb.com/typescript/v5"
-        description="thirdweb TypeScript SDK documentation"
-      />
+// function ThirdwebResources() {
+//   return (
+//     <div className="grid gap-4 lg:grid-cols-3 justify-center">
+//       <ArticleCard
+//         title="thirdweb SDK Docs"
+//         href="https://portal.thirdweb.com/typescript/v5"
+//         description="thirdweb TypeScript SDK documentation"
+//       />
 
-      <ArticleCard
-        title="Components and Hooks"
-        href="https://portal.thirdweb.com/typescript/v5/react"
-        description="Learn about the thirdweb React components and hooks in thirdweb SDK"
-      />
+//       <ArticleCard
+//         title="Components and Hooks"
+//         href="https://portal.thirdweb.com/typescript/v5/react"
+//         description="Learn about the thirdweb React components and hooks in thirdweb SDK"
+//       />
 
-      <ArticleCard
-        title="thirdweb Dashboard"
-        href="https://thirdweb.com/dashboard"
-        description="Deploy, configure, and manage your smart contracts from the dashboard."
-      />
-    </div>
-  );
-}
+//       <ArticleCard
+//         title="thirdweb Dashboard"
+//         href="https://thirdweb.com/dashboard"
+//         description="Deploy, configure, and manage your smart contracts from the dashboard."
+//       />
+//     </div>
+//   );
+// }
 
 function ArticleCard(props: {
   title: string;

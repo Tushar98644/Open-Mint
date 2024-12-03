@@ -1,24 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { ConnectButton } from "thirdweb/react";
 import thirdwebIcon from "@public/thirdweb.svg";
-import { client } from "../client";
+import { LoginButton } from "@/components/connect-button/button";
 
 export default function Home() {
   return (
     <main className="bg-zinc-950 text-neutral-200 p-4 pb-10 min-h-[100vh] flex items-center justify-center container min-w-[100vw]">
       <div className="py-20">
         <Header />
-
         <div className="flex justify-center mb-20">
-          <ConnectButton
-            client={client}
-            appMetadata={{
-              name: "Example App",
-              url: "https://example.com",
-            }}
-          />
+          <LoginButton />
         </div>
 
         {/* <ThirdwebResources /> */}
@@ -45,13 +37,13 @@ function Header() {
         <span className="inline-block -skew-x-6 text-blue-500"> OpenMint </span>
       </h1>
 
-      <p className="text-zinc-300 text-base">
+      {/* <p className="text-zinc-300 text-base">
         Read the{" "}
         <code className="bg-zinc-800 text-zinc-300 px-2 rounded py-1 text-sm mx-1">
           README.md
         </code>{" "}
         file to get started.
-      </p>
+      </p> */}
     </header>
   );
 }

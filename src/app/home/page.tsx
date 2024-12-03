@@ -5,13 +5,14 @@
 'use client'
 
 import "./home.css"
-import p from "../imgs/p.jpg";
+import p from "../../imgs/p.jpg";
 import { useState, useEffect } from "react";
 import { Element, animateScroll as scroll, scroller } from "react-scroll";
-import mat from "../imgs/mat.png";
+import mat from "../../imgs/mat.png";
 import { TailSpin } from 'react-loader-spinner';
 import 'react-toastify/dist/ReactToastify.css';
-import { MediaRenderer } from "@thirdweb-dev/react";
+import { MediaRenderer } from "thirdweb/react";
+import { client } from "../client";
 
 export default function Home() {
 
@@ -247,7 +248,7 @@ export default function Home() {
 
                         <div className="conts">
                           <div className="ybgImage">
-                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} />
+                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} client={client} />
                           </div>
                           <div className="details">
                             <div className="btitle-div">
@@ -310,7 +311,7 @@ export default function Home() {
 
                         <div className="conts">
                           <div className="ybgImage">
-                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} />
+                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} client={client} />
                           </div>
                           <div className="details">
                             <div className="btitle-div">
@@ -373,7 +374,7 @@ export default function Home() {
 
                         <div className="conts">
                           <div className="ybgImage">
-                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} />
+                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} client={client} />
                           </div>
                           <div className="details">
                             <div className="btitle-div">
@@ -384,7 +385,7 @@ export default function Home() {
                                 <p className="bprice-text">Price</p>
                                 <div className="beth">
                                   <div className="blogo-div">
-                                    <MediaRenderer src={mat.src} />
+                                    <MediaRenderer src={mat.src} client={client} />
                                   </div>
                                   <div className="bamount-div">
                                     <p>{e.price} MATIC</p>
@@ -436,7 +437,7 @@ export default function Home() {
 
                         <div className="conts">
                           <div className="ybgImage">
-                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} />
+                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} client={client}/>
                           </div>
                           <div className="details">
                             <div className="btitle-div">
@@ -499,7 +500,7 @@ export default function Home() {
 
                         <div className="conts">
                           <div className="ybgImage">
-                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} />
+                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} client={client} />
                           </div>
                           <div className="details">
                             <div className="btitle-div">
@@ -625,7 +626,7 @@ export default function Home() {
 
                         <div className="conts">
                           <div className="ybgImage">
-                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} />
+                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} client={client} />
                           </div>
                           <div className="details">
                             <div className="btitle-div">
@@ -688,7 +689,7 @@ export default function Home() {
 
                         <div className="conts">
                           <div className="ybgImage">
-                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} />
+                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} client={client} />
                           </div>
                           <div className="details">
                             <div className="btitle-div">
@@ -751,7 +752,7 @@ export default function Home() {
 
                         <div className="conts">
                           <div className="ybgImage">
-                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} />
+                            <MediaRenderer className="ycoverImg" src={e.cover} alt={e.name} client={client}/>
                           </div>
                           <div className="details">
                             <div className="btitle-div">
